@@ -16,7 +16,7 @@ a:link {
 }
 
 :root{
-	--byAlmeydacolor: linear-gradient(90deg, #FC466B, #3F5EFB,#dc2430, #FC466B);
+	--byAlmeydacolor: linear-gradient(90deg, #0058d3,#1276fe,#0099ff, #00ccff,#0099ff, #1276fe, #0058d3);
 	--almeydaText: #fff;
 }
 canvas {
@@ -60,6 +60,7 @@ p {
 	animation: byAlmeyda 20s linear infinite;
 	background: var(--byAlmeydacolor);
 	background-size: 400%;
+	backdrop-filter: blur(20px);
   }
   .powered{
 	width: 100%;
