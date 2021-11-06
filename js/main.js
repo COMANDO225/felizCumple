@@ -1,6 +1,6 @@
 let musicaFc = new Howl({
     src: ['/sound/music.mp3'],
-    autoplay: false,
+    html5: true,
 });
 
 window.addEventListener('load', () => {
