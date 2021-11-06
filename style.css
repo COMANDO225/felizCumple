@@ -90,6 +90,7 @@ p {
 		background-position: 0%;
 	}
   }
+  
   .poweredbyAlmeydaFranja::before{
 	content: '';
 	position: absolute;
