@@ -5,18 +5,27 @@
 	text-decoration: none;
 	list-style: none;
 	outline: none;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 *:after,
 *:before {
-	  box-sizing: border-box;  
+	box-sizing: border-box;
 }
 a:link {
 	text-decoration: none;
 }
 
-:root{
-	--byAlmeydacolor: linear-gradient(90deg, #0058d3,#1276fe,#0099ff, #00ccff,#0099ff, #1276fe, #0058d3);
+:root {
+	--byAlmeydacolor: linear-gradient(
+		90deg,
+		#0058d3,
+		#1276fe,
+		#0099ff,
+		#00ccff,
+		#0099ff,
+		#1276fe,
+		#0058d3
+	);
 	--almeydaText: #fff;
 }
 canvas {
@@ -46,7 +55,7 @@ p {
 	bottom: 3.5rem;
 }
 
-.poweredbyAlmeydaFranja{
+.poweredbyAlmeydaFranja {
 	position: absolute;
 	width: 100%;
 	height: 2.5rem;
@@ -54,46 +63,46 @@ p {
 	display: flex;
 	align-items: center;
 	bottom: 0;
-  }
-  .poweredbyAlmeydaFranja,
-  .poweredbyAlmeydaFranja::before{
+}
+.poweredbyAlmeydaFranja,
+.poweredbyAlmeydaFranja::before {
 	animation: byAlmeyda 20s linear infinite;
 	background: var(--byAlmeydacolor);
 	background-size: 400%;
 	backdrop-filter: blur(20px);
-  }
-  .powered{
+}
+.powered {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
 	z-index: 2;
-  }
-  .powered svg{
+}
+.powered svg {
 	font-size: 20px;
 	fill: var(--almeydaText);
 	margin: 0px 3px 0px 5px;
-  }
-  .almeyda{
+}
+.almeyda {
 	font-size: 14px;
 	font-weight: 400;
 	color: var(--almeydaText);
-  }
-  @keyframes byAlmeyda{
-	0%{
-	  	background-position: 0%;
-	}
-	50%{
-	  	background-position: 400%;
-	}
-	100%{
+}
+@keyframes byAlmeyda {
+	0% {
 		background-position: 0%;
 	}
-  }
-  
-  .poweredbyAlmeydaFranja::before{
-	content: '';
+	50% {
+		background-position: 400%;
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+
+.poweredbyAlmeydaFranja::before {
+	content: "";
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -103,6 +112,13 @@ p {
 	bottom: -5px;
 	z-index: 1;
 	filter: blur(20px);
-	opacity: .4;
-	transition: .5s;
-  }
+	opacity: 0.4;
+	transition: 0.5s;
+}
+
+.parafrase {
+	width: 100%;
+	display: flex !important;
+	justify-content: center !important;
+	text-align: center !important;
+}
